@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E2E">
+  <test name="e2e">
+    <classes>
+
+      <class name="main.java.testcases.LoginPageTest">
+        <methods>
+          <include name="validateJobSeekerSignUpFunctionality"/>
+          <include name="validateFreelancerSignUpFunctionality"/>
+          <include name="validateOthersSignUpFunctionality"/>
+          <include name="validateBusinessOwnerSignupFunctionality"/>
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class>
+
+        <class name="main.java.testcases.HomepageTest">
+            <methods>
+                <include name="validateHomePageLoadSuccessfully"/>
+                <include name="validateUserCanShareTextOnTimeline"/>
+                <include name="validateUserCanShareTextOnTimelineWithImage"/>
+                <include name="validateUserCanShareVideosOnTimeline"/>
+                <include name="validateUserCanWriteArticleAndShare"/>
+                <include name="validateUserCanSeeTrendingTopics"/>
+                <include name="validateSuggestedGroupViewAllButtonFunctionality"/>
+                <include name="validateViewAllUsersButtonFunctionality"/>
+                <include name="validateUserCanScrollThroughPostsAndNewPostsLoad"/>
+                <include name="validateUserCanLikeAPost"/>
+            </methods>
+        </class>
+
+        <class name="main.java.testcases.DashboardPageTest">
+            <methods>
+                <include name="validateDashboardPageLoadSuccessfully"/>
+            </methods>
+        </class>
+
+        <class name="main.java.testcases.MarketplacePageTest">
+            <methods>
+                <include name="validateMarketplacePageLoadSuccessfully"/>
+                <include name="validateProjectSearchFunctionalityOnMarketPlace"/>
+                <include name="validateViewAllCategoriesButtonFunctionality"/>
+            </methods>
+        </class>
+
+        <class name="main.java.testcases.HotDealsPageTest">
+            <methods>
+                <include name="validateHotDealsPageLoadSuccessfully"/>
+                <include name="validateHotDealsSearchFunctionality"/>
+                <include name="validateViewAllCategoriesButtonFunctionality"/>
+            </methods>
+        </class>
+
+        <class name="main.java.testcases.ProfilePageTest">
+            <methods>
+                <include name="validateProfilePageLoadsSuccessfully"/>
+                <include name="validateUserCanChangeTheirCoverPhoto"/>
+                <include name="validateUsersCanChangeTheirProfilePicture"/>
+                <include name="validateUserCanUpdateTheirAboutMeSection"/>
+                <include name="validateUserCanUpdateTheirInterestsOnProfilePage"/>
+                <include name="validateUserCanUpdateIndustrySettingsOnProfilePage"/>
+                <include name="validateUsersCanUpdateTheirSkillsOnProfilePage"/>
+                <include name="validateLanguageUpdateFunctionalityOnProfile"/>
+                <include name="validateUserCanAddNewCategory"/>
+<!--                <include name="validateCreateProjectFunctionality"/>-->
+            </methods>
+        </class>
+
+        <class name="main.java.testcases.LogOutPageTest">
+            <methods>
+                <include name="validateLogoutFunctionality"/>
+            </methods>
+        </class>
+
+    </classes>
+  </test>
+</suite>
