@@ -5,6 +5,7 @@ public class TestDataModel {
     private String email;
     private String subject;
     private String message;
+    private String anda;
     private String password;
 
     public String getName() {
